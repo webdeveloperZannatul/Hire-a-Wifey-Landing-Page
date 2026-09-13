@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hire a Wifey — We Take Care of Home | Hervey Bay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Instrument Serif', 'serif'],
+                        script: ['Caveat', 'cursive'],
+                    },
+                    colors: {
+                        brand: { pink: '#FF1A8A', soft: '#FFF0F5', light: '#FFE4EF', dark: '#0F0F0F', charcoal: '#222222', muted: '#6B6B78' }
+                    },
+                    borderRadius: { '4xl': '2rem', '5xl': '2.5rem' }
+                }
+            }
+        }
+    </script>
+    <style>
+        *{ -webkit-font-smoothing: antialiased; }
+        body{ background:#FFFFFF; color:#111; }
+        .glass{ backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+        .card-shadow{ box-shadow: 0 12px 40px rgba(15,15,15,0.06), 0 1px 2px rgba(0,0,0,0.04); }
+        .card-shadow-hover:hover{ box-shadow: 0 20px 60px rgba(15,15,15,0.10); }
+        .text-balance{ text-wrap: balance; }
+        .pink-gradient{ background: linear-gradient(90deg, #FFE4EF 0%, #FF9AC6 50%, #FFE4EF 100%); }
+        .hero-img-mask{ border-radius: 32px 32px 32px 4px; }
+        .piping{ position:relative; }
+        .piping::after{ content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:#FF1A8A; border-radius:99px; }
+        .faq-open .faq-icon{ transform: rotate(45deg); }
+        .no-scrollbar::-webkit-scrollbar{ display:none; } .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
+        input:focus, textarea:focus, select:focus{ outline:none; box-shadow:0 0 0 3px rgba(255,26,138,0.15); border-color:#FF1A8A !important; }
+    </style>
+</head>
+<body class="font-sans bg-white selection:bg-brand-pink selection:text-white">
+
+<!-- Header -->
+<header id="header" class="sticky top-0 z-50 bg-white/80 glass border-b border-black/[0.06] transition-all">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8 h-[72px] lg:h-[84px] flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3 shrink-0">
+            <img src="https://i.ibb.co.com/F4Fmjbkt/Hire-A-Wifey-Logo-client-one-png-01.jpg" alt="Hire a Wifey logo" width="82" height="58">
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 text-[14px] font-medium">
+            <a href="#home" class="hover:text-brand-pink transition">Home</a>
+            <a href="#services" class="hover:text-brand-pink transition">Services</a>
+            <a href="#how-it-works" class="hover:text-brand-pink transition">How it works</a>
+            <a href="#areas" class="hover:text-brand-pink transition">Service Area</a>
+            <a href="#reviews" class="hover:text-brand-pink transition">Reviews</a>
+            <a href="#faq" class="hover:text-brand-pink transition">FAQ</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/booking" class="hidden lg:inline-flex h-[44px] px-6 rounded-full bg-black text-white text-[13px] font-semibold tracking-wide uppercase items-center gap-2 hover:bg-zinc-800 transition">
+                Book a Wifey
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+            <button id="menuBtn" class="lg:hidden w-11 h-11 rounded-full bg-black text-white grid place-items-center">
+                <i data-lucide="menu" class="w-5 h-5 menu-icon"></i>
+                <i data-lucide="x" class="w-5 h-5 close-icon hidden"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="lg:hidden hidden border-t border-black/5 bg-white">
+        <div class="px-5 py-8 space-y-6">
+            <div class="grid gap-1">
+                <a href="#home" class="mobile-link text-[28px] font-serif leading-none py-2">Home</a>
+                <a href="#services" class="mobile-link text-[28px] font-serif leading-none py-2">Services</a>
+                <a href="#how-it-works" class="mobile-link text-[28px] font-serif leading-none py-2">How it works</a>
+                <a href="#areas" class="mobile-link text-[28px] font-serif leading-none py-2">Hervey Bay Area</a>
+                <a href="#reviews" class="mobile-link text-[28px] font-serif leading-none py-2">Reviews</a>
+                <a href="#faq" class="mobile-link text-[28px] font-serif leading-none py-2">FAQ</a>
+                <a href="/recruitment" class="mobile-link text-[28px] font-serif leading-none py-2 text-brand-pink">Become a Wifey</a>
+            </div>
+            <div class="flex gap-3 pt-2">
+                <a href="/booking" class="flex-1 h-[52px] rounded-full bg-black text-white grid place-items-center font-semibold uppercase tracking-wide text-sm">Book a Wifey</a>
+                <a href="#enquiry" class="flex-1 h-[52px] rounded-full border border-black grid place-items-center font-semibold uppercase tracking-wide text-sm">Enquire</a>
+            </div>
+            <div class="flex items-center gap-3 text-[12px] text-black/50 pt-2">
+                <span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> NDIS & DVA Approved</span>
+                <span>•</span><span>Police Checked</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="relative overflow-hidden">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-6 items-center pt-8 lg:pt-14 pb-10 lg:pb-20">
+            <!-- Left -->
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-soft border border-brand-light text-[11px] font-semibold tracking-widest uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-pink animate-pulse"></span>
+                    Hervey Bay's Trusted Home Support • Est. 2020
+                </div>
+
+                <h1 class="font-serif text-[42px] lg:text-[74px] leading-[0.92] tracking-[-0.03em] mt-6 text-balance">
+                    More time for<br>
+                    <span class="font-script font-normal text-brand-pink text-[48px] lg:text-[86px] leading-none -rotate-1 inline-block translate-y-1">life.</span><br>
+                    We take care<br>of home.
+                </h1>
+
+                <p class="mt-6 text-[16px] lg:text-[18px] leading-[1.6] text-black/60 max-w-[46ch] text-balance">
+                    Professional, friendly Wifeys who handle the cleaning, laundry, ironing, bed making, dishes and organising — so you get your time back.
+                </p>
+
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <a href="/booking" class="h-[52px] px-7 rounded-full bg-black text-white inline-flex items-center gap-2.5 font-semibold text-[13px] uppercase tracking-wide hover:bg-zinc-900 transition">
+                        Book a Wifey
+                        <span class="w-6 h-6 rounded-full bg-brand-pink grid place-items-center text-black"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+                    </a>
+                    <a href="#enquiry" class="h-[52px] px-7 rounded-full border border-black/15 bg-white inline-flex items-center gap-2 font-semibold text-[13px] uppercase tracking-wide hover:border-black transition">
+                        Enquire now
+                    </a>
+                </div>
+
+                <div class="mt-10 flex flex-wrap items-center gap-6 lg:gap-8 border-t border-black/5 pt-6">
+                    <div class="flex -space-x-3">
+                        <img src="https://i.pravatar.cc/100?img=32" class="w-9 h-9 rounded-full border-2 border-white object-cover" alt="">
+                        <img src="https://i.pravatar.cc/100?img=26" class="w-9 h-9 rounded-full border-2 border-white object-cover" alt="">
+                        <img src="https://i.pravatar.cc/100?img=16" class="w-9 h-9 rounded-full border-2 border-white object-cover" alt="">
+                        <div class="w-9 h-9 rounded-full border-2 border-white bg-black text-white grid place-items-center text-[10px] font-bold">4.9</div>
+                    </div>
+                    <div class="text-[13px] leading-[1.3]">
+                        <div class="font-semibold">Trusted by 300+ homes in Hervey Bay</div>
+                        <div class="text-black/50 flex items-center gap-1"><i data-lucide="star" class="w-3 h-3 fill-amber-400 text-amber-400"></i> 4.9 average • Police checked • Insured</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Visual -->
+            <div class="relative lg:h-[640px]">
+                <div class="relative h-[480px] lg:h-full rounded-[32px] overflow-hidden bg-[#F6F1EC]">
+                    <img src="https://i.ibb.co.com/4ZddbF6C/hero-Wifey-laundry.png?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Friendly professional Wifey helping in a bright home" class="absolute inset-0 w-full h-full object-cover">
+                    <!-- <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1000&auto=format&fit=crop" alt="Friendly professional Wifey helping in a bright home" class="absolute inset-0 w-full h-full object-cover"> -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+
+                    <!-- Uniform detail card -->
+                    <div class="absolute bottom-4 left-4 right-4 lg:bottom-5 lg:left-5 lg:right-5 flex gap-3">
+                        <div class="flex-1 rounded-[20px] bg-white/90 glass p-3.5 flex items-center gap-3 card-shadow">
+                            <div class="w-[56px] h-[56px] rounded-full overflow-hidden border-2 border-brand-pink shrink-0">
+                                <img src="https://www.designarena.ai/u/4dedde84-0b17-486a-8cda-bb160ec3f2e6" alt="Uniform collar detail" class="w-full h-full object-cover">
+                            </div>
+                            <div class="leading-tight">
+                                <div class="text-[11px] uppercase tracking-widest font-semibold text-black/50">Uniform Detail</div>
+                                <div class="font-serif text-[16px] leading-none mt-1">Proudly in pink & black</div>
+                                <div class="text-[11px] text-black/60 mt-1">CoolDry • Piping • Logo embroidered</div>
+                            </div>
+                        </div>
+                        <div class="hidden sm:flex w-[96px] rounded-[20px] bg-black text-white p-3 flex-col justify-center card-shadow">
+                            <div class="text-[28px] font-serif leading-none">100%</div>
+                            <div class="text-[10px] uppercase tracking-wide leading-tight mt-1 opacity-70">Police checked & fully insured Wifeys</div>
+                        </div>
+                    </div>
+
+                    <!-- Floating badge top -->
+                    <div class="absolute top-4 left-4 bg-white rounded-full px-3 py-1.5 flex items-center gap-2 text-[11px] font-semibold card-shadow">
+                        <span class="w-5 h-5 rounded-full bg-brand-pink grid place-items-center text-white"><i data-lucide="heart" class="w-3 h-3 fill-white"></i></span>
+                        We Take Care of Home ♡
+                    </div>
+                </div>
+
+                <!-- Pink script banner - like reference -->
+                <div class="absolute -bottom-6 lg:-bottom-8 left-1/2 -translate-x-1/2 w-[92%] lg:w-[108%] pink-gradient rounded-full h-[56px] flex items-center justify-center rotate-[-1.2deg] shadow-[0_8px_30px_rgba(255,26,138,0.25)]">
+                    <span class="font-script text-[28px] lg:text-[32px] tracking-wide">We Take Care of Home ♡</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Intro / Trust -->
+<section class="py-16 lg:py-24 border-t border-black/[0.04] mt-6">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-20 items-start">
+            <div class="sticky top-[110px]">
+                <div class="text-[11px] tracking-[0.2em] uppercase font-semibold text-brand-pink">Why Hervey Bay Loves Us</div>
+                <h2 class="font-serif text-[34px] lg:text-[48px] leading-[0.95] tracking-[-0.02em] mt-4 text-balance">
+                    Not just a clean home.<br>
+                    <span class="italic font-light">A calmer life.</span>
+                </h2>
+                <div class="mt-8 flex gap-3">
+                    <div class="w-12 h-12 rounded-full bg-black text-white grid place-items-center"><i data-lucide="sparkles" class="w-5 h-5"></i></div>
+                    <p class="text-[14px] leading-[1.6] text-black/60 max-w-[32ch]">We’re the extra pair of hands you’ve been wishing for — reliable, warm, and thorough.</p>
+                </div>
+            </div>
+            <div class="grid gap-8">
+                <p class="text-[18px] lg:text-[20px] leading-[1.5] font-medium tracking-[-0.01em] text-balance">
+                    Hire a Wifey is Hervey Bay’s household support service for busy families, professionals, seniors and NDIS participants. We do more than cleaning — we handle the everyday jobs that eat your time.
+                </p>
+                <div class="grid sm:grid-cols-2 gap-6 pt-2">
+                    <div class="piping pl-5">
+                        <div class="font-semibold text-[15px]">We’re thorough, not rushed</div>
+                        <div class="text-[14px] text-black/60 leading-[1.5] mt-1">Same trusted Wifey where possible, detailed checklists, and a home that feels reset.</div>
+                    </div>
+                    <div class="piping pl-5">
+                        <div class="font-semibold text-[15px]">We’re people-first</div>
+                        <div class="text-[14px] text-black/60 leading-[1.5] mt-1">Friendly, police-checked, insured. We treat your home like our own.</div>
+                    </div>
+                    <div class="piping pl-5">
+                        <div class="font-semibold text-[15px]">We give you time back</div>
+                        <div class="text-[14px] text-black/60 leading-[1.5] mt-1">Laundry folded, beds made, dishes done, meals prepped — freedom in your week.</div>
+                    </div>
+                    <div class="piping pl-5">
+                        <div class="font-semibold text-[15px]">Local & dependable</div>
+                        <div class="text-[14px] text-black/60 leading-[1.5] mt-1">Hervey Bay born. We show up, communicate clearly, and care deeply.</div>
+                    </div>
+                </div>
+                <div class="rounded-[24px] bg-brand-soft p-6 flex gap-4 items-start">
+                    <img src="https://www.designarena.ai/u/4dedde84-0b17-486a-8cda-bb160ec3f2e6" alt="Uniform detail" class="w-16 h-16 rounded-full object-cover border-2 border-brand-pink hidden sm:block">
+                    <div>
+                        <div class="font-serif text-[20px] leading-none">The Wifey Standard</div>
+                        <div class="text-[13px] text-black/60 mt-2 leading-[1.6]">Every Wifey wears our signature black + hot pink CoolDry uniform with embroidered logo — easy to recognise, breathable for Queensland homes, and made for work that cares.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Grid -->
+<section id="services" class="py-16 lg:py-24 bg-[#FAF9F8]">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="flex flex-wrap items-end justify-between gap-6">
+            <div>
+                <div class="text-[11px] tracking-[0.2em] uppercase font-semibold text-brand-pink">What We Handle</div>
+                <h2 class="font-serif text-[36px] lg:text-[54px] leading-[0.9] tracking-[-0.02em] mt-3">Everything that<br>makes a house a home</h2>
+            </div>
+            <p class="text-[15px] text-black/60 max-w-[36ch] leading-[1.6]">Less text, more done. Choose one service or combine them — your Wifey tailors each visit.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-12 gap-4 lg:gap-5 mt-10">
+            <!-- Cleaning - large -->
+            <div class="lg:col-span-7 group relative rounded-[28px] overflow-hidden bg-white card-shadow card-shadow-hover transition-all h-[360px] lg:h-[420px]">
+                <img src="https://i.ibb.co.com/4Z1x8Zfq/Wifey-cleaning1.png?q=80&w=1200&auto=format&fit=crop" alt="Cleaning" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                <div class="absolute top-4 left-4 bg-white rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-wide">Most Booked</div>
+                <div class="absolute bottom-0 p-6 lg:p-7 text-white">
+                    <h3 class="font-serif text-[28px] leading-none">Cleaning</h3>
+                    <p class="text-[13px] opacity-80 mt-2 max-w-[32ch]">Detailed, consistent cleans that reset your home. Bathrooms, kitchens, living — done right.</p>
+                </div>
+            </div>
+            <!-- Laundry -->
+            <div class="lg:col-span-5 group relative rounded-[28px] overflow-hidden bg-white card-shadow card-shadow-hover transition-all h-[360px] lg:h-[420px]">
+               <!--  <img style="width:300px; height:360px;" src="https://i.ibb.co.com/twm3P7j1/Wifey-Ironining.png" alt="A Hire a Wifey team member ironing clothes" loading="lazy" decoding="async"> -->
+               <img style="width:495px; height:420px;" src="https://i.ibb.co.com/nsBkyqvy/Wifey-laundry2-1.png?q=80&w=800&auto=format&fit=crop" alt="Laundry" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-6 text-white">
+                    <h3 class="font-serif text-[24px] leading-none">Laundry</h3>
+                    <p class="text-[13px] opacity-80 mt-1">Washed, dried, folded — put away how you like it.</p>
+                </div>
+            </div>
+            <!-- Ironing -->
+            <div class="lg:col-span-3 group relative rounded-[28px] overflow-hidden bg-white card-shadow h-[280px]">
+                <img style="width:280px; height:289px;" src="https://i.ibb.co.com/twm3P7j1/Wifey-Ironining.png?q=80&amp;w=600&amp;auto=format&amp;fit=crop" alt="Ironing" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+                <!-- <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?q=80&w=600&auto=format&fit=crop" alt="Ironing" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition duration-700"> -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div class="absolute bottom-0 p-5 text-white"><h3 class="font-serif text-[20px]">Ironing</h3><p class="text-[12px] opacity-80">Crisp shirts, uniforms, linen — ready to wear.</p></div>
+            </div>
+            <!-- Bed Making -->
+            <div class="lg:col-span-3 group relative rounded-[28px] overflow-hidden bg-white card-shadow h-[280px]">
+                <img src="https://i.ibb.co.com/8n79bxFc/Wifey-Bed-Making.png?q=80&w=600&auto=format&fit=crop" alt="Bed making" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div class="absolute bottom-0 p-5 text-white"><h3 class="font-serif text-[20px]">Bed Making</h3><p class="text-[12px] opacity-80">Hotel-fresh beds, linen changed & styled.</p></div>
+            </div>
+            <!-- Organisation -->
+            <div class="lg:col-span-3 group relative rounded-[28px] overflow-hidden bg-white card-shadow h-[280px]">
+                <img src="https://i.ibb.co.com/276jfF7B/Wifey-Home-Organization.png?q=80&w=600&auto=format&fit=crop" alt="Home Organisation" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div class="absolute bottom-0 p-5 text-white"><h3 class="font-serif text-[20px]">Organisation</h3><p class="text-[12px] opacity-80">Wardrobes, pantries, clutter — calm restored.</p></div>
+            </div>
+            <!-- Dishes + Meal Prep stacked in one col on desktop? Actually separate -->
+            <div class="lg:col-span-3 grid grid-rows-2 gap-4 lg:gap-5 h-[280px] lg:h-[280px]">
+                <div class="group relative rounded-[24px] overflow-hidden bg-white card-shadow">
+                    <img src="https://i.ibb.co.com/zHhZ25Sg/Wifey-Dishes2.png?q=80&w=600&auto=format&fit=crop" alt="Dishes" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 p-4 text-white"><h3 class="font-serif text-[18px] leading-none">Dishes</h3></div>
+                </div>
+                <div class="group relative rounded-[24px] overflow-hidden bg-white card-shadow">
+                    <img src="https://i.ibb.co.com/Kx8mLdyj/Wifey-Meal-Preparation.png?q=80&w=600&auto=format&fit=crop" alt="Meal Prep" class="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 p-4 text-white"><h3 class="font-serif text-[18px] leading-none">Meal Preparation</h3></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 flex justify-center">
+            <a href="/booking" class="inline-flex h-[44px] px-6 rounded-full bg-black text-white text-[12px] font-semibold uppercase tracking-wide items-center gap-2">View availability <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="py-16 lg:py-28 relative">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div class="lg:col-span-5">
+                <div class="rounded-[32px] overflow-hidden bg-[#F8F5F2] p-2">
+                    <div class="rounded-[24px] overflow-hidden aspect-[4/5] relative">
+                        <img src="https://i.ibb.co.com/9H7HjMMh/Wifey-Meal-Preparation1-1.png?q=80&w=800&auto=format&fit=crop" alt="Family time" class="w-full h-full object-cover">
+                        <!-- <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop" alt="Family time" class="w-full h-full object-cover"> -->
+                        <div class="absolute bottom-3 left-3 right-3 bg-white rounded-[18px] p-4 flex items-center gap-3 card-shadow">
+                            <div class="w-10 h-10 rounded-full bg-brand-soft grid place-items-center text-brand-pink"><i data-lucide="clock" class="w-5 h-5"></i></div>
+                            <div>
+                                <div class="font-semibold text-[14px] leading-none">Avg. 6.5 hrs back / week</div>
+                                <div class="text-[12px] text-black/60 mt-1">What our clients report</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase font-semibold text-brand-pink"><span class="w-8 h-[1px] bg-brand-pink"></span> More time for what matters</div>
+                <h2 class="font-serif text-[36px] lg:text-[56px] leading-[0.9] tracking-[-0.02em] mt-4">Your time is the<br>real luxury.</h2>
+                <div class="grid sm:grid-cols-2 gap-6 mt-10">
+                    <div class="rounded-[20px] border border-black/5 p-5">
+                        <div class="w-9 h-9 rounded-full bg-black text-white grid place-items-center mb-4"><i data-lucide="heart-handshake" class="w-4 h-4"></i></div>
+                        <div class="font-semibold text-[15px]">Be present, not busy</div>
+                        <div class="text-[13px] text-black/60 leading-[1.5] mt-1">Spend evenings with family, not folding laundry. Weekends for the beach, not bathrooms.</div>
+                    </div>
+                    <div class="rounded-[20px] border border-black/5 p-5">
+                        <div class="w-9 h-9 rounded-full bg-brand-pink text-white grid place-items-center mb-4"><i data-lucide="sparkle" class="w-4 h-4"></i></div>
+                        <div class="font-semibold text-[15px]">A home that feels good</div>
+                        <div class="text-[13px] text-black/60 leading-[1.5] mt-1">Fresh beds, clear benches, calm spaces — mental load, lifted.</div>
+                    </div>
+                    <div class="rounded-[20px] border border-black/5 p-5">
+                        <div class="w-9 h-9 rounded-full bg-black text-white grid place-items-center mb-4"><i data-lucide="shield-check" class="w-4 h-4"></i></div>
+                        <div class="font-semibold text-[15px]">Trust you can feel</div>
+                        <div class="text-[13px] text-black/60 leading-[1.5] mt-1">Same familiar face, police-checked, insured, and trained in our Wifey Way.</div>
+                    </div>
+                    <div class="rounded-[20px] bg-black text-white p-5">
+                        <div class="text-[12px] uppercase tracking-widest opacity-60">Client love</div>
+                        <div class="font-serif text-[18px] leading-[1.2] mt-2">“I walked in and actually cried. It wasn’t just clean — it felt like someone cared.”</div>
+                        <div class="text-[12px] opacity-60 mt-3">— Sarah, Eli Waters</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Area + NDIS/DVA -->
+<section id="areas" class="py-16 lg:py-20 bg-black text-white rounded-t-[32px] lg:rounded-t-[48px]">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-10">
+            <div class="lg:col-span-5">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-[11px] tracking-widest uppercase font-semibold">Hervey Bay • Local</div>
+                <h2 class="font-serif text-[34px] lg:text-[48px] leading-[0.9] mt-5">Proudly caring for<br>Hervey Bay homes</h2>
+                <p class="text-white/60 text-[14px] leading-[1.6] mt-4 max-w-[38ch]">We’re based here, we live here, and we know how busy life by the bay can get. Same-day enquiries, flexible bookings.</p>
+
+                <div class="mt-8 grid grid-cols-2 gap-2 text-[13px]">
+                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span> Urangan</div>
+                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span> Torquay</div>
+                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span> Scarness</div>
+                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span> Pialba</div>
+                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span> Eli Waters</div>
+                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span> Kawungan</div>
+                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span> Wondunna</div>
+                    <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span> Urraween</div>
+                </div>
+
+                <div class="mt-8 flex gap-3">
+                    <a href="/booking" class="h-[44px] px-6 rounded-full bg-white text-black inline-flex items-center text-[12px] font-semibold uppercase tracking-wide gap-2">Check my suburb <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+                    <a href="#enquiry" class="h-[44px] px-6 rounded-full border border-white/20 inline-flex items-center text-[12px] font-semibold uppercase tracking-wide">Ask a question</a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+                <div class="rounded-[24px] bg-[#1A1A1A] border border-white/10 p-6">
+                    <div class="w-10 h-10 rounded-full bg-brand-pink grid place-items-center text-white"><i data-lucide="accessibility" class="w-5 h-5"></i></div>
+                    <h3 class="font-serif text-[22px] mt-4 leading-none">NDIS Support</h3>
+                    <p class="text-[13px] text-white/60 leading-[1.6] mt-3">Registered provider friendly. We help participants maintain a safe, clean, organised home with respectful, consistent support.</p>
+                    <ul class="mt-4 space-y-2 text-[12px] text-white/80">
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-pink"></i> Household tasks, linen, organisation</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-pink"></i> Flexible, person-centred visits</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-pink"></i> Easy invoicing for plan managers</li>
+                    </ul>
+                    <a href="#enquiry" class="mt-6 inline-flex text-[11px] uppercase tracking-widest font-semibold border-b border-white/30 pb-1">Enquire about NDIS</a>
+                </div>
+                <div class="rounded-[24px] bg-white text-black p-6">
+                    <div class="w-10 h-10 rounded-full bg-black text-white grid place-items-center"><i data-lucide="medal" class="w-5 h-5"></i></div>
+                    <h3 class="font-serif text-[22px] mt-4 leading-none">DVA Support</h3>
+                    <p class="text-[13px] text-black/60 leading-[1.6] mt-3">Approved domestic assistance for veterans. Dignified, reliable help that respects your home and routine.</p>
+                    <ul class="mt-4 space-y-2 text-[12px]">
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-pink"></i> Veteran-aware, discreet service</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-pink"></i> Weekly / fortnightly options</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-pink"></i> Coordinated with your provider</li>
+                    </ul>
+                    <a href="#enquiry" class="mt-6 inline-flex text-[11px] uppercase tracking-widest font-semibold border-b border-black/20 pb-1">Enquire about DVA</a>
+                </div>
+                <div class="sm:col-span-2 rounded-[24px] bg-brand-pink text-white p-5 flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full bg-black grid place-items-center text-white"><i data-lucide="phone" class="w-5 h-5"></i></div>
+                        <div>
+                            <div class="text-[12px] uppercase tracking-widest opacity-80">Need help choosing?</div>
+                            <div class="font-serif text-[20px] leading-none mt-1">We’ll guide you to the right support</div>
+                        </div>
+                    </div>
+                    <a href="/booking" class="shrink-0 w-10 h-10 rounded-full bg-white text-black grid place-items-center"><i data-lucide="arrow-up-right" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="py-16 lg:py-24 bg-[#FAF9F8]">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="flex items-end justify-between gap-6 flex-wrap">
+            <h2 class="font-serif text-[32px] lg:text-[46px] leading-[0.9]">Loved by locals,<br>trusted in their homes</h2>
+            <div class="flex items-center gap-3">
+                <div class="flex items-center gap-1 text-amber-500"><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500"></i></div>
+                <span class="text-[13px] font-semibold">4.9/5 from 127 reviews</span>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4 lg:gap-5 mt-10">
+            <div class="rounded-[24px] bg-white p-6 card-shadow">
+                <div class="flex gap-1 text-amber-500"><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i></div>
+                <p class="font-serif text-[18px] leading-[1.3] mt-4">“My Wifey is an angel. Laundry done, beds perfect, kitchen sparkling. I got my Saturday back.”</p>
+                <div class="flex items-center gap-3 mt-5">
+                    <img src="https://i.pravatar.cc/100?img=5" class="w-9 h-9 rounded-full object-cover" alt="">
+                    <div><div class="text-[13px] font-semibold leading-none">Jess M.</div><div class="text-[11px] text-black/50 mt-1">Pialba • Weekly</div></div>
+                </div>
+            </div>
+            <div class="rounded-[24px] bg-black text-white p-6 card-shadow">
+                <div class="flex gap-1 text-brand-pink"><i data-lucide="star" class="w-3.5 h-3.5 fill-brand-pink"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-brand-pink"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-brand-pink"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-brand-pink"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-brand-pink"></i></div>
+                <p class="font-serif text-[18px] leading-[1.3] mt-4">“NDIS support that actually feels like care. Respectful, consistent, and my home feels safe again.”</p>
+                <div class="flex items-center gap-3 mt-5">
+                    <img src="https://i.pravatar.cc/100?img=12" class="w-9 h-9 rounded-full object-cover" alt="">
+                    <div><div class="text-[13px] font-semibold leading-none">Karen T.</div><div class="text-[11px] text-white/50 mt-1">Urangan • NDIS</div></div>
+                </div>
+            </div>
+            <div class="rounded-[24px] bg-white p-6 card-shadow">
+                <div class="flex gap-1 text-amber-500"><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i></div>
+                <p class="font-serif text-[18px] leading-[1.3] mt-4">“Better than a cleaner. She organised my pantry, ironed uniforms, and left a little note. So thoughtful.”</p>
+                <div class="flex items-center gap-3 mt-5">
+                    <img src="https://i.pravatar.cc/100?img=33" class="w-9 h-9 rounded-full object-cover" alt="">
+                    <div><div class="text-[13px] font-semibold leading-none">Amelia R.</div><div class="text-[11px] text-black/50 mt-1">Eli Waters • Fortnightly</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How it works -->
+<section id="how-it-works" class="py-16 lg:py-24">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="max-w-[720px] mx-auto text-center">
+            <div class="text-[11px] tracking-[0.2em] uppercase font-semibold text-brand-pink">How it works</div>
+            <h2 class="font-serif text-[36px] lg:text-[52px] leading-[0.9] mt-4">Book in minutes.<br>Breathe for the week.</h2>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-4 lg:gap-6 mt-12 max-w-[1040px] mx-auto">
+            <div class="rounded-[28px] border border-black/5 p-7 relative">
+                <div class="absolute top-6 right-6 text-[56px] font-serif leading-none opacity-[0.06]">01</div>
+                <div class="w-11 h-11 rounded-full bg-brand-soft border border-brand-light grid place-items-center text-brand-pink"><i data-lucide="calendar-heart" class="w-5 h-5"></i></div>
+                <h3 class="font-semibold text-[16px] mt-6">Tell us what you need</h3>
+                <p class="text-[13px] text-black/60 leading-[1.6] mt-2">Choose services, frequency, and any special touches. Takes 60 seconds.</p>
+                <a href="/booking" class="mt-5 inline-flex text-[11px] uppercase tracking-widest font-semibold gap-1 items-center">Book now <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+            </div>
+            <div class="rounded-[28px] bg-black text-white p-7 relative">
+                <div class="absolute top-6 right-6 text-[56px] font-serif leading-none opacity-10 text-white">02</div>
+                <div class="w-11 h-11 rounded-full bg-white/10 grid place-items-center"><i data-lucide="user-check" class="w-5 h-5"></i></div>
+                <h3 class="font-semibold text-[16px] mt-6">We match your Wifey</h3>
+                <p class="text-[13px] text-white/60 leading-[1.6] mt-2">Police-checked, insured, local. We pair you with someone who fits your home.</p>
+                <div class="mt-5 inline-flex items-center gap-2 text-[11px]"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Average match: 24hrs</div>
+            </div>
+            <div class="rounded-[28px] border border-black/5 p-7 relative">
+                <div class="absolute top-6 right-6 text-[56px] font-serif leading-none opacity-[0.06]">03</div>
+                <div class="w-11 h-11 rounded-full bg-brand-soft border border-brand-light grid place-items-center text-brand-pink"><i data-lucide="house-heart" class="w-5 h-5"></i></div>
+                <h3 class="font-semibold text-[16px] mt-6">Enjoy your time back</h3>
+                <p class="text-[13px] text-black/60 leading-[1.6] mt-2">Come home to calm. Same Wifey where possible, easy rescheduling.</p>
+                <div class="mt-5 text-[11px] uppercase tracking-widest font-semibold text-brand-pink">We Take Care of Home ♡</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-16 lg:py-20 bg-[#FAF9F8]">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-[0.8fr_1.2fr] gap-10">
+            <div>
+                <div class="text-[11px] tracking-[0.2em] uppercase font-semibold text-brand-pink">FAQ</div>
+                <h2 class="font-serif text-[32px] lg:text-[42px] leading-[0.9] mt-4">Quick answers</h2>
+                <p class="text-[14px] text-black/60 mt-4 leading-[1.6] max-w-[32ch]">Everything you need to know. Still unsure? Send us an enquiry — we reply within hours.</p>
+                <a href="#enquiry" class="mt-6 inline-flex h-[40px] px-5 rounded-full bg-black text-white text-[12px] font-semibold uppercase tracking-wide items-center">Ask us anything</a>
+            </div>
+            <div class="divide-y divide-black/10 border-y border-black/10">
+                <div class="faq-item py-5 cursor-pointer group">
+                    <div class="flex justify-between gap-6">
+                        <div class="font-semibold text-[15px]">What’s included in a Wifey visit?</div>
+                        <div class="faq-icon w-7 h-7 rounded-full border border-black/15 grid place-items-center shrink-0 transition"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </div>
+                    <div class="faq-content hidden mt-3 text-[14px] leading-[1.6] text-black/60 max-w-[56ch]">Cleaning, laundry, ironing, bed making, dishes, light organisation and meal prep — you choose the mix. We bring a checklist and tailor it to your home.</div>
+                </div>
+                <div class="faq-item py-5 cursor-pointer group">
+                    <div class="flex justify-between gap-6">
+                        <div class="font-semibold text-[15px]">Do I get the same Wifey each time?</div>
+                        <div class="faq-icon w-7 h-7 rounded-full border border-black/15 grid place-items-center shrink-0 transition"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </div>
+                    <div class="faq-content hidden mt-3 text-[14px] leading-[1.6] text-black/60 max-w-[56ch]">Yes, where possible. We know trust matters, so we prioritise consistency. If your Wifey is away, we’ll arrange a vetted backup.</div>
+                </div>
+                <div class="faq-item py-5 cursor-pointer group">
+                    <div class="flex justify-between gap-6">
+                        <div class="font-semibold text-[15px]">Are you NDIS and DVA approved?</div>
+                        <div class="faq-icon w-7 h-7 rounded-full border border-black/15 grid place-items-center shrink-0 transition"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </div>
+                    <div class="faq-content hidden mt-3 text-[14px] leading-[1.6] text-black/60 max-w-[56ch]">We work with NDIS participants and DVA clients regularly, with clear invoicing for plan managers and providers. Enquire and we’ll guide you.</div>
+                </div>
+                <div class="faq-item py-5 cursor-pointer group">
+                    <div class="flex justify-between gap-6">
+                        <div class="font-semibold text-[15px]">What areas do you cover?</div>
+                        <div class="faq-icon w-7 h-7 rounded-full border border-black/15 grid place-items-center shrink-0 transition"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </div>
+                    <div class="faq-content hidden mt-3 text-[14px] leading-[1.6] text-black/60 max-w-[56ch]">All of Hervey Bay: Urangan, Torquay, Scarness, Pialba, Eli Waters, Kawungan, Wondunna, Urraween and surrounds. Not sure? Ask us.</div>
+                </div>
+                <div class="faq-item py-5 cursor-pointer group">
+                    <div class="flex justify-between gap-6">
+                        <div class="font-semibold text-[15px]">Do I need to provide cleaning products?</div>
+                        <div class="faq-icon w-7 h-7 rounded-full border border-black/15 grid place-items-center shrink-0 transition"><i data-lucide="plus" class="w-4 h-4"></i></div>
+                    </div>
+                    <div class="faq-content hidden mt-3 text-[14px] leading-[1.6] text-black/60 max-w-[56ch]">We can use your preferred products, or bring our own on request. We’re careful with surfaces and always ask about allergies or preferences.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Become a Wifey -->
+<section class="py-12 lg:py-16">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="rounded-[32px] bg-black text-white overflow-hidden grid lg:grid-cols-[1.1fr_0.9fr] items-center">
+            <div class="p-8 lg:p-12">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-[11px] uppercase tracking-widest font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span> We’re hiring</div>
+                <h2 class="font-serif text-[34px] lg:text-[48px] leading-[0.9] mt-5">Become a Wifey.<br><span class="text-brand-pink italic">Care that pays.</span></h2>
+                <p class="text-white/60 text-[14px] leading-[1.6] mt-4 max-w-[44ch]">Love making homes feel calm? Join Hervey Bay’s most loved home-support team. Flexible hours, great pay, real respect.</p>
+                <div class="mt-8 flex gap-3">
+                    <a href="/recruitment" class="h-[46px] px-6 rounded-full bg-brand-pink text-white inline-flex items-center text-[12px] font-semibold uppercase tracking-wide gap-2 hover:bg-[#E60076] transition">Apply to be a Wifey <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+                    <a href="/recruitment" class="h-[46px] px-6 rounded-full border border-white/20 inline-flex items-center text-[12px] font-semibold uppercase tracking-wide">Learn more</a>
+                </div>
+            </div>
+            <div class="relative h-[300px] lg:h-[420px] bg-[#1A1A1A]">
+                <img src="https://i.ibb.co.com/jP1HG1Xd/Wifey-cleaning.png?q=80&w=800&auto=format&fit=crop" alt="Wifey team" class="absolute inset-0 w-full h-full object-cover opacity-60">
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-black/20 to-transparent lg:bg-gradient-to-l"></div>
+                <div class="absolute bottom-5 left-5 right-5 flex gap-3">
+                    <div class="rounded-[16px] bg-white text-black px-4 py-3 flex-1">
+                        <div class="text-[11px] uppercase tracking-wide opacity-60">Perks</div>
+                        <div class="text-[13px] font-semibold leading-tight mt-1">Flexible hours • Supportive team • Uniform provided</div>
+                    </div>
+                    <div class="w-[88px] rounded-[16px] overflow-hidden border-2 border-brand-pink hidden sm:block">
+                        <img src="https://www.designarena.ai/u/4dedde84-0b17-486a-8cda-bb160ec3f2e6" alt="Uniform" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact / Enquiry -->
+<section id="enquiry" class="py-16 lg:py-24">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-10">
+            <div class="lg:col-span-5">
+                <div class="text-[11px] tracking-[0.2em] uppercase font-semibold text-brand-pink">Get in touch</div>
+                <h2 class="font-serif text-[34px] lg:text-[48px] leading-[0.9] mt-4">Tell us how we<br>can help at home</h2>
+                <p class="text-[14px] text-black/60 leading-[1.6] mt-4 max-w-[36ch]">General enquiries, NDIS/DVA questions, or not sure what you need — we’ll reply within a few hours (Mon–Sat).</p>
+
+                <div class="mt-8 space-y-4">
+                    <div class="flex gap-3 items-start">
+                        <div class="w-10 h-10 rounded-full bg-brand-soft grid place-items-center text-brand-pink shrink-0"><i data-lucide="map-pin" class="w-4 h-4"></i></div>
+                        <div><div class="font-semibold text-[13px]">Hervey Bay, QLD 4655</div><div class="text-[12px] text-black/60">Serving all bay suburbs</div></div>
+                    </div>
+                    <div class="flex gap-3 items-start">
+                        <div class="w-10 h-10 rounded-full bg-black text-white grid place-items-center shrink-0"><i data-lucide="mail" class="w-4 h-4"></i></div>
+                        <div><div class="font-semibold text-[13px]">hello@hireawifey.com.au</div><div class="text-[12px] text-black/60">Enquiries • NDIS • DVA</div></div>
+                    </div>
+                    <div class="flex gap-3 items-start">
+                        <div class="w-10 h-10 rounded-full bg-black text-white grid place-items-center shrink-0"><i data-lucide="phone" class="w-4 h-4"></i></div>
+                        <div><div class="font-semibold text-[13px]">07 4123 4567</div><div class="text-[12px] text-black/60">Mon–Sat 8am–5pm</div></div>
+                    </div>
+                </div>
+
+                <!-- Small Map -->
+                <div class="mt-8 rounded-[20px] overflow-hidden border border-black/10">
+                    <div class="h-[180px] bg-[#EDE9E6] relative">
+                        <iframe title="Hervey Bay Map" class="absolute inset-0 w-full h-full border-0" loading="lazy" allowfullscreen
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57207.991251174!2d152.812!3d-25.288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bdf4f1e5a9f5b9b%3A0x502a35af3de84c0!2sHervey%20Bay%20QLD!5e0!3m2!1sen!2sau!4v1700000000000"></iframe>
+                        <div class="absolute top-3 left-3 bg-white rounded-full px-3 py-1 text-[11px] font-semibold shadow">Hervey Bay • We come to you</div>
+                    </div>
+                    <div class="bg-white p-3 flex items-center justify-between">
+                        <span class="text-[12px] text-black/60">Open map in Google</span>
+                        <a href="https://maps.google.com/?q=Hervey+Bay+QLD" target="_blank" class="w-7 h-7 rounded-full bg-black text-white grid place-items-center"><i data-lucide="external-link" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7">
+                <div class="rounded-[28px] border border-black/10 bg-white p-6 lg:p-8 card-shadow">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-serif text-[22px]">Send an enquiry</h3>
+                        <span class="text-[11px] px-2.5 py-1 rounded-full bg-brand-soft text-brand-pink font-semibold uppercase tracking-wide">We reply fast</span>
+                    </div>
+
+                    <form id="enquiryForm" class="mt-6 grid gap-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-[11px] uppercase tracking-widest font-semibold text-black/60">Full name</label>
+                                <input required type="text" placeholder="e.g. Sarah Smith" class="mt-2 w-full h-[48px] rounded-full border border-black/15 px-5 text-[14px] bg-white">
+                            </div>
+                            <div>
+                                <label class="text-[11px] uppercase tracking-widest font-semibold text-black/60">Phone</label>
+                                <input required type="tel" placeholder="04xx xxx xxx" class="mt-2 w-full h-[48px] rounded-full border border-black/15 px-5 text-[14px] bg-white">
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-[11px] uppercase tracking-widest font-semibold text-black/60">Email</label>
+                                <input required type="email" placeholder="you@email.com" class="mt-2 w-full h-[48px] rounded-full border border-black/15 px-5 text-[14px] bg-white">
+                            </div>
+                            <div>
+                                <label class="text-[11px] uppercase tracking-widest font-semibold text-black/60">Service</label>
+                                <select class="mt-2 w-full h-[48px] rounded-full border border-black/15 px-5 text-[14px] bg-white">
+                                    <option>General cleaning + home help</option>
+                                    <option>NDIS support</option>
+                                    <option>DVA support</option>
+                                    <option>Laundry / Ironing only</option>
+                                    <option>One-off reset</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-[11px] uppercase tracking-widest font-semibold text-black/60">How can we help?</label>
+                            <textarea required rows="4" placeholder="Tell us about your home, frequency, suburb..." class="mt-2 w-full rounded-[20px] border border-black/15 p-4 text-[14px] bg-white resize-none"></textarea>
+                        </div>
+                        <div class="flex items-start gap-3 pt-1">
+                            <input type="checkbox" required id="consent" class="mt-1 rounded border-black/20">
+                            <label for="consent" class="text-[11px] leading-[1.5] text-black/60">I agree to be contacted about my enquiry and understand my details are kept private. No spam.</label>
+                        </div>
+                        <div class="flex gap-3 pt-2">
+                            <button type="submit" class="h-[50px] px-7 rounded-full bg-black text-white text-[12px] font-semibold uppercase tracking-wide inline-flex items-center gap-2 hover:bg-zinc-900 transition">
+                                Send enquiry
+                                <span class="w-6 h-6 rounded-full bg-brand-pink grid place-items-center text-black"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+                            </button>
+                            <div class="text-[11px] text-black/50 leading-[1.4] self-center">Or <a href="/booking" class="underline decoration-brand-pink underline-offset-4 font-semibold text-black">book directly</a> if you know what you need.</div>
+                        </div>
+                        <div id="formSuccess" class="hidden mt-2 rounded-[16px] bg-emerald-50 border border-emerald-200 p-4 text-[13px] text-emerald-800">Thanks! We’ve got your enquiry and will reply within a few hours (Mon–Sat). ♡</div>
+                    </form>
+                </div>
+
+                <div class="mt-4 grid sm:grid-cols-3 gap-3 text-[12px]">
+                    <div class="rounded-full border border-black/10 px-4 py-2.5 flex items-center gap-2 justify-center"><i data-lucide="shield-check" class="w-4 h-4 text-brand-pink"></i> Police checked</div>
+                    <div class="rounded-full border border-black/10 px-4 py-2.5 flex items-center gap-2 justify-center"><i data-lucide="badge-check" class="w-4 h-4 text-brand-pink"></i> Fully insured</div>
+                    <div class="rounded-full border border-black/10 px-4 py-2.5 flex items-center gap-2 justify-center"><i data-lucide="heart" class="w-4 h-4 text-brand-pink"></i> Local & trusted</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#0F0F0F] text-white pt-14 pb-10 ">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-10">
+            <div class="lg:col-span-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-16 h-14  bg-white text-black grid place-items-center">
+                        <span><img src="https://i.ibb.co.com/F4Fmjbkt/Hire-A-Wifey-Logo-client-one-png-01.jpg" alt="Hire a Wifey logo" width="82" height="58">  </span>
+                    </div>
+                    <div class="leading-none">
+                        <div class="font-serif text-[18px]">hire a <span class="text-brand-pink">wifey</span></div>
+                        <div class="text-[9px] tracking-[0.18em] uppercase opacity-60">We Take Care Of Home</div>
+                    </div>
+                </div>
+                <p class="text-white/60 text-[13px] leading-[1.6] mt-5 max-w-[32ch]">Hervey Bay’s household support — cleaning, laundry, ironing, bed making, dishes, organisation and meal prep. Trusted, friendly, local.</p>
+                <div style="margin-top:24px; display:flex; gap:8px;">
+
+    <!-- Instagram -->
+    <a href="#"
+       style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:#ffffff; text-decoration:none; transition:0.3s;"
+       onmouseover="this.style.background='rgba(255,255,255,0.2)'"
+       onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="18" height="18"
+             viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37a4 4 0 1 1-7.94 1.18A4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+        </svg>
+    </a>
+
+    <!-- Facebook -->
+    <a href="#"
+       style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:#ffffff; text-decoration:none; transition:0.3s;"
+       onmouseover="this.style.background='rgba(255,255,255,0.2)'"
+       onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="18" height="18"
+             viewBox="0 0 24 24"
+             fill="currentColor">
+            <path d="M22 12.06C22 6.48 17.52 2 12 2S2 6.48 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.64.78-1.64 1.58v1.87h2.79l-.45 2.91h-2.34V22C18.34 21.24 22 17.08 22 12.06z"/>
+        </svg>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:your@email.com"
+       style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:#ffffff; text-decoration:none; transition:0.3s;"
+       onmouseover="this.style.background='rgba(255,255,255,0.2)'"
+       onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="18" height="18"
+             viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+        </svg>
+    </a>
+
+</div>
+                
+            </div>
+            <div class="lg:col-span-2">
+                <div class="text-[11px] uppercase tracking-widest opacity-50 font-semibold">Quick Links</div>
+                <div class="mt-4 grid gap-2.5 text-[13px] text-white/80">
+                    <a href="#services" class="hover:text-white">Services</a>
+                    <a href="#how-it-works" class="hover:text-white">How it works</a>
+                    <a href="#areas" class="hover:text-white">Service area</a>
+                    <a href="#reviews" class="hover:text-white">Reviews</a>
+                    <a href="#faq" class="hover:text-white">FAQ</a>
+                </div>
+            </div>
+            <div class="lg:col-span-3">
+                <div class="text-[11px] uppercase tracking-widest opacity-50 font-semibold">Book & Join</div>
+                <div class="mt-4 grid gap-3">
+                    <a href="/booking" class="h-[44px] rounded-full bg-white text-black grid place-items-center text-[12px] font-semibold uppercase tracking-wide">Book a Wifey</a>
+                    <a href="/recruitment" class="h-[44px] rounded-full border border-white/20 grid place-items-center text-[12px] font-semibold uppercase tracking-wide">Become a Wifey</a>
+                    <a href="#enquiry" class="h-[44px] rounded-full bg-brand-pink text-white grid place-items-center text-[12px] font-semibold uppercase tracking-wide">General Enquiry</a>
+                </div>
+            </div>
+            <div class="lg:col-span-3">
+                <div class="text-[11px] uppercase tracking-widest opacity-50 font-semibold">Contact</div>
+                <div class="mt-4 text-[13px] leading-[1.6] text-white/70">
+                    <div>Hervey Bay, QLD 4655</div>
+                    <div class="mt-2">hello@hireawifey.com.au</div>
+                    <div>07 4123 4567</div>
+                    <div class="mt-4 text-[11px] leading-[1.5] opacity-60">Mon–Sat 8am–5pm<br>NDIS & DVA enquiries welcome<br>ABN: 12 345 678 901</div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 pt-6 border-t border-white/10 flex flex-wrap gap-4 justify-between items-center text-[11px] text-white/50">
+            <div>© <span id="year"></span> Hire a Wifey. We Take Care of Home ♡ — Hervey Bay. All rights reserved. Developed by Zannatul.</div>
+            <div class="flex gap-4"><a href="#" class="hover:text-white">Privacy</a><a href="#" class="hover:text-white">Terms</a><span>Crafted with care in Hervey Bay</span></div>
+        </div>
+    </div>
+</footer>
+
+<!-- Sticky Mobile Book -->
+<div class="lg:hidden fixed bottom-0 inset-x-0 z-40 p-3 pointer-events-none">
+    <div class="max-w-[480px] mx-auto flex gap-2 pointer-events-auto">
+        <a href="/booking" class="flex-1 h-[52px] rounded-full bg-black text-white shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center gap-2 font-semibold text-[13px] uppercase tracking-wide">
+            <span class="w-6 h-6 rounded-full bg-brand-pink grid place-items-center text-black"><i data-lucide="sparkles" class="w-3.5 h-3.5"></i></span>
+            Book a Wifey
+        </a>
+        <a href="#enquiry" class="w-[52px] h-[52px] rounded-full bg-white border border-black/10 shadow-[0_10px_30px_rgba(0,0,0,0.12)] grid place-items-center"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+    </div>
+</div>
+
+<script>
+    lucide.createIcons();
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 10) header.classList.add('shadow-[0_8px_30px_rgba(0,0,0,0.06)]');
+        else header.classList.remove('shadow-[0_8px_30px_rgba(0,0,0,0.06)]');
+    });
+
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    let menuOpen = false;
+    menuBtn.addEventListener('click', () => {
+        menuOpen = !menuOpen;
+        mobileMenu.classList.toggle('hidden', !menuOpen);
+        menuBtn.querySelector('.menu-icon').classList.toggle('hidden', menuOpen);
+        menuBtn.querySelector('.close-icon').classList.toggle('hidden', !menuOpen);
+    });
+    document.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click', () => {
+        menuOpen = false;
+        mobileMenu.classList.add('hidden');
+        menuBtn.querySelector('.menu-icon').classList.remove('hidden');
+        menuBtn.querySelector('.close-icon').classList.add('hidden');
+    }));
+
+    // FAQ
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const content = item.querySelector('.faq-content');
+            const isOpen = !content.classList.contains('hidden');
+            document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('faq-open'));
+            document.querySelectorAll('.faq-icon').forEach(ic => ic.innerHTML = '<i data-lucide="plus" class="w-4 h-4"></i>');
+            if(!isOpen){
+                content.classList.remove('hidden');
+                item.classList.add('faq-open');
+                item.querySelector('.faq-icon').innerHTML = '<i data-lucide="x" class="w-4 h-4"></i>';
+            }
+            lucide.createIcons();
+        });
+    });
+    // open first
+    document.querySelector('.faq-item')?.click();
+
+    // Form
+    const form = document.getElementById('enquiryForm');
+    const success = document.getElementById('formSuccess');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        btn.innerHTML = 'Sending...';
+        btn.disabled = true;
+        setTimeout(() => {
+            success.classList.remove('hidden');
+            btn.innerHTML = 'Sent ♡';
+            form.reset();
+            setTimeout(()=>{ btn.innerHTML = 'Send enquiry <span class="w-6 h-6 rounded-full bg-brand-pink grid place-items-center text-black"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>'; btn.disabled=false; lucide.createIcons(); }, 2500);
+        }, 900);
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            const id = a.getAttribute('href');
+            if(id.length > 1){
+                const el = document.querySelector(id);
+                if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+            }
+        });
+    });
+</script>
+</body>
+</html>
